@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yavuz Selman - Web Developer</title>
+    <style>
+        /* Genel stiller */
+        body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20231030/pngtree-textured-background-with-a-dark-grey-paper-surface-image_13764260.png'); /* Arka plan resminin URL'si */
+    background-size: cover; /* Resmi tam ekranda sığacak şekilde büyütür */
+    background-position: center; /* Resmi ortalar */
+    background-attachment: fixed; /* Arka planın sayfa kaydırıldığında sabit kalmasını sağlar */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+        header {
+            background: linear-gradient(to right, #3A8DFF, #A9D4FF);
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+            padding: 0 20px;
+        }
+
+        .logo-container {
+            text-align: center;
+            flex: 0;
+        }
+
+        .logo {
+            width: 150px; /* Mavi kısmın genişliği kadar logo büyütüldü */
+            height: auto;
+        }
+
+        .header-text {
+            text-align: left;
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        header h2 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        .university-goal {
+            font-size: 1.2em;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #6C5B7B;
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        .social-link,
+        .cta-button {
+            display: inline-block;
+            color: white;
+            background-color: #6C5B7B;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+            font-size: 1.1em;
+            text-align: center;
+        }
+
+        .social-link:hover,
+        .cta-button:hover {
+            background-color: #3A8DFF;
+        }
+
+        /* Butonlar için ortak stil */
+        button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #4CAF50;
+        }
+
+        /* Sekmeler için stiller */
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            flex: 1;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 5px 0;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        /* Mobil uyumluluk için medya sorguları */
+        @media (max-width: 768px) {
+            header {
+                padding: 25px 0;
+            }
+
+            header h2 {
+                font-size: 2.2em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            .university-goal {
+                font-size: 1em;
+            }
+
+            section {
+                margin: 10px;
+                padding: 15px;
+            }
+
+            footer {
+                padding: 12px;
+            }
+
+            .cta-button {
+                font-size: 0.9em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h2 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 0.9em;
+            }
+
+            .university-goal {
+                font-size: 0.9em;
+            }
+
+            section {
+                padding: 10px;
+            }
+
+            ul li {
+                font-size: 0.9em;
+            }
+
+            footer {
+                padding: 10px;
+            }
+
+            .cta-button {
+                padding: 8px 15px;
+                font-size: 0.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="logo/Leonardo_Phoenix_A_bold_and_artistic_2D_logo_design_for_a_soft_0.jpg" alt="Yavuz Selman Logo" class="logo">
+            </div>
+            <div class="header-text">
+                <h2>Yavuz Selman BABACAN</h2>
+                <a href="https://www.instagram.com/ysbb1453" target="_blank" class="social-link">Instagram Hesabım</a>
+                <a href="https://instagram.com/direct/t/ysbb1453" target="_blank" class="cta-button">Benimle İletişime Geç</a> <!-- Instagram Direct linki eklendi -->
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>Hakkımda</h2>
+        <p>Ben Yavuz Selman, 15 yaşında bir yazılımcıyım. Yazılıma olan ilgim, küçük yaşlardayken başladım ve bu ilgim her geçen yıl daha da büyüdü. C# ile yazılım geliştirme, frontend ve backend web programlama, mobil uygulama geliştirme (Flutter) gibi alanlarda kendimi geliştiriyorum.</p>
+        <p>Birçok projede YURTİÇİ ve YURTDIŞI olmak üzere hem bireysel olarak hem de grup çalışmalarıyla tecrübe kazandım. Özellikle web geliştirme alanında HTML, CSS ve JavaScript dillerine hakimim. Ayrıca backend tarafında PHP ve Node.js gibi teknolojilerle projeler geliştirdim. Flutter kullanarak mobil uygulamalar da geliştirmekteyim. Yazılım geliştirme sürecinde karşılaştığım her yeni zorluk, beni daha da motive ediyor.</p>
+        <p>Yazılım dünyasında kendimi geliştirmek için sürekli yeni teknolojileri takip ediyor ve öğrenmeye devam ediyorum. İleriye dönük olarak daha büyük projelerde yer almayı hedefliyorum. Kod yazmak sadece bir iş değil, benim için bir tutku ve bu tutkuyu her geçen gün daha da büyütüyorum.</p>
+        <p>ODTÜ Bilgisayar Mühendisliği bölümünü istiyorum.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Yeteneklerim</h2>
+        <ul>
+            <li>C#</li>
+            <li>Frontend Web Programlama (HTML, CSS, JavaScript)</li>
+            <li>Backend Web Programlama</li>
+            <li>Flutter</li>
+            <li>JavaScript</li>
+            <li>CSS</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>İletişime geçmek için <a href="mailto:yavuzselman032010@gmail.com">bana e-posta gönderin</a>.</p>
+    </footer>
+</body>
+</html>
