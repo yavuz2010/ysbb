@@ -7,18 +7,18 @@
     <style>
         /* Genel stiller */
         body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20231030/pngtree-textured-background-with-a-dark-grey-paper-surface-image_13764260.png'); /* Arka plan resminin URL'si */
-    background-size: cover; /* Resmi tam ekranda sığacak şekilde büyütür */
-    background-position: center; /* Resmi ortalar */
-    background-attachment: fixed; /* Arka planın sayfa kaydırıldığında sabit kalmasını sağlar */
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20231030/pngtree-textured-background-with-a-dark-grey-paper-surface-image_13764260.png'); /* Arka plan resminin URL'si */
+            background-size: cover; /* Resmi tam ekranda sığacak şekilde büyütür */
+            background-position: center; /* Resmi ortalar */
+            background-attachment: fixed; /* Arka planın sayfa kaydırıldığında sabit kalmasını sağlar */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
 
         header {
             background: linear-gradient(to right, #3A8DFF, #A9D4FF);
@@ -28,6 +28,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            width: 100%;
         }
 
         .header-content {
@@ -176,6 +177,13 @@
 
             .cta-button {
                 font-size: 0.9em;
+            }
+
+            /* Butonlar için düzenleme */
+            .cta-button,
+            .social-link {
+                font-size: 1em;
+                padding: 8px 15px;
             }
         }
 
